@@ -1,0 +1,63 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "version": "1",
+      "title": "OpenAPI3Definition 41",
+      "description": ""
+    },
+    "paths": {
+      "/customers/create": {
+        "post": {
+          "operationId": "create-customer",
+          "description": "",
+          "parameters": [],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/customer"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/customer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "securitySchemes": {},
+      "schemas": {
+        "customer": {
+          "properties": {
+            "name": {
+              "nullable": false,
+              "type": "string"
+            },
+            "email": {
+              "nullable": false,
+              "type": "string"
+            },
+            "dateOfBirth": {
+              "nullable": false,
+              "type": "string"
+            },
+            "id": {
+              "nullable": true,
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
