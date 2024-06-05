@@ -1,0 +1,5 @@
+{
+  "customerMail" : .mail,
+  "customerPassword" : .password
+  "customerUsername" : .username,
+}

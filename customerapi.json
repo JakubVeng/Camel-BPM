@@ -15,7 +15,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/customer"
+                  "type": "string"
                 }
               }
             }
@@ -26,7 +26,7 @@
               "content": {
                 "application/json": {
                   "schema": {
-                    "$ref": "#/components/schemas/customer"
+                    "type": "string"
                   }
                 }
               }
@@ -37,27 +37,6 @@
     },
     "components": {
       "securitySchemes": {},
-      "schemas": {
-        "customer": {
-          "properties": {
-            "name": {
-              "nullable": false,
-              "type": "string"
-            },
-            "email": {
-              "nullable": false,
-              "type": "string"
-            },
-            "dateOfBirth": {
-              "nullable": false,
-              "type": "string"
-            },
-            "id": {
-              "nullable": true,
-              "type": "string"
-            }
-          }
-        }
-      }
+      "schemas": {}
     }
   }
