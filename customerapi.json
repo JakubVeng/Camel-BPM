@@ -6,7 +6,7 @@
       "description": ""
     },
     "paths": {
-      "/customers/create": {
+      "/customer": {
         "post": {
           "operationId": "create-customer",
           "description": "",
